@@ -1,0 +1,53 @@
+/* CSS for Film Title Hangman Game */
+body {
+    background-color: black;
+}
+
+#blurb_display {
+    font-size: 2em;
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    padding: 2%;
+    font-family: "Encode", sans-serif;
+}
+
+#phrase_display {
+    font-size: 3em;
+    letter-spacing: 10px;
+    margin-top: 0;
+    padding: 1%;
+    color: aliceblue;
+    background-color: gray;
+    text-align: center;
+    font-family: "Encode", sans-serif;
+    height: 45px;
+}
+
+.msgbtn {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.win-message {
+    color: chartreuse;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.lose-message {
+    color: red;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#image_display {
+    background-image: "./assets/images/background.jpg";
+}
+
+#background_image {
+    width: 100%;
+    height: 600px;
+}
