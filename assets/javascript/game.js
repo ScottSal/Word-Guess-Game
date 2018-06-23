@@ -1,3 +1,4 @@
+//Hints and Answers
 var gamePhrases = [
     {phrase: "Old School", blurb: "Well, um, actually a pretty nice little Saturday, we're going to go to Home Depot. Yeah, buy some wallpaper, maybe get some flooring, stuff like that. Maybe Bed, Bath, & Beyond, I don't know, I don't know if we'll have enough time."},
     {phrase: "Dumb and Dumber", blurb: "You sold our dead bird to a blind kid?!"},
@@ -10,7 +11,7 @@ var gamePhrases = [
     {phrase: "Billy Madison", blurb: "At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points, and may God have mercy on your soul."},
     {phrase: "Tommy Boy", blurb: "Brothers don't shake hands. Brothers gotta hug."}
 ];
-
+//How the game is randomized
 function getNewPhrase() {
     return gamePhrases[Math.floor(Math.random() * gamePhrases.length)];
 }
@@ -52,7 +53,7 @@ function restart() {
     blurb_display.textContent = currentPhrase.blurb;
 
 }
-
+//When buttons are pushed
 document.onkeyup = function(event) {
     console.log(event.key);
   
@@ -81,7 +82,7 @@ document.onkeyup = function(event) {
         tempstr += displayString.charAt(i);
       }
     }
-  
+    //Incorrect guess
     if (correct_guess === false) {
       noisecomplaints++;
         if (noisecomplaints === 6) {
@@ -95,7 +96,7 @@ document.onkeyup = function(event) {
     
     displayString = tempstr;
     display.textContent = displayString;
-  
+    //Correct guess
     if (lettersToWinGame === 0) {
       audio = new Audio('./assets/sounds/applause.mp3');
       audio.play();
